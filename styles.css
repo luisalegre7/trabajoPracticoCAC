@@ -1,0 +1,243 @@
+:root {
+    --main-white: #D4CDCB;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #resto {
+        font-size: 35px;
+    }
+
+    #reserva {
+        font-size: 17px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #lema {
+        font-size: 20px;
+    }
+    #veni {
+        font-size: 35px;
+    }
+    #ul-list {
+        font-size: 10px;
+        margin: 0;
+        align-items: center;
+    }
+    #construccion {
+        background-image: url(img/sitio-movil.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #navbar {
+        justify-content: center;
+        font-size: 5px;
+    }
+
+    #pie-pagina {
+        display: flex;
+        text-align: center;
+        text-shadow: #1d1c1b 5px 5px 10px;
+    }
+
+    #links a {
+        color:#D4CDCB;
+        text-shadow: #1d1c1b 5px 5px 10px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #reserva {
+        margin: 0;
+    }
+
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #ul-list {
+        margin: 0;
+        gap: 90px;
+    }
+
+    #ul-list li a {
+        margin: 0;
+        margin-top: 5px;
+        font-size: 25px;
+    }
+
+    #links {
+        position: relative;
+        margin-top: 100px;
+        text-shadow: #1d1c1b 5px 5px 10px;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/fondo3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 15px 15px 2px rgba(255,0,0,0.5);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 4rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-shadow: #1d1c1b 5px 5px 10px;
+}
+
+.nav-list a {
+    display: flex;
+    font-size: 15px;
+    padding: 1rem;
+    color: var(--main-white);
+    top: 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: background-color 0.7s;
+}
+
+a:hover {
+    color: white;
+    background-color: var(--main-gray);
+    opacity: 0.6;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+a:visited {
+    display: none;
+}
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    color: #D4CDCB;
+    font-size: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--main-white);
+    font-size: 70px;
+    text-align: center;
+}
+
+p {
+    color: var(--main-red);
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.links-contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 980px;
+    max-height: 980px;
+    margin: 5.5rem auto;
+    flex-wrap: wrap;
+    position: relative;
+    top: -45vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-contacto a:hover {
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition-property: transform 0.3s ease-out;
+}
+
+section * a {
+    font-size: 50px;
+}
+
+.contact-details {
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+.links-contacto a {
+    color: white;
+    font-size: 20px;
+    text-shadow: #1d1c1b 5px 5px 10px;
+}
+
+h1, h2 {
+    text-shadow: #1d1c1b 5px 5px 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-white);
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: #1d1c1b 5px 5px 10px;
+    margin-bottom: 2rem;
+}
